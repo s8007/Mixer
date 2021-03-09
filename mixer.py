@@ -34,7 +34,6 @@ root.filename8=''
 root.midfile=''
 root.paused=False
 root.playing=False
-channel=mixer.find_channel()
 root.track=1
 root.title('Mixer v1.0 ©sserver')
 root.pan1=0
