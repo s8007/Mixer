@@ -282,32 +282,6 @@ def update_volume():
     channel6.set_volume(root.volumeL6, root.volumeR6)
     channel7.set_volume(root.volumeL7, root.volumeR7)
     channel8.set_volume(root.volumeL7, root.volumeR8)
-    if root.playing:
-        if not root.filename1=='':
-            root.meter1.set(root.volume1*100)
-        if not root.filename2=='':
-            root.meter2.set(root.volume2*100)
-        if not root.filename3=='':
-            root.meter3.set(root.volume3*100)
-        if not root.filename4=='':
-            root.meter4.set(root.volume4*100)
-        if not root.filename5=='':
-            root.meter5.set(root.volume5*100)
-        if not root.filename6=='':
-            root.meter6.set(root.volume6*100)
-        if not root.filename7=='':
-            root.meter7.set(root.volume7*100)
-        if not root.filename8=='':
-            root.meter8.set(root.volume8*100)
-    else:
-        root.meter1.set(0)
-        root.meter2.set(0)
-        root.meter3.set(0)
-        root.meter4.set(0)
-        root.meter5.set(0)
-        root.meter6.set(0)
-        root.meter7.set(0)
-        root.meter8.set(0)
     root.update()
 def change_volume1(v):
     root.volume1=-1*int(float(v))/20
